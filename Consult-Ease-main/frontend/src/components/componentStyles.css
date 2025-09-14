@@ -1,0 +1,164 @@
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+}
+
+.input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.75rem; 
+  pointer-events: none;
+}
+
+.icon {
+  width: 1.25rem;  
+  height: 1.25rem;
+  color: #F5A425; 
+
+}
+
+.input-field {
+  width: 40rem;
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(31, 41, 55, 0.5);
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  color: white;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.input-form-field {
+  width: 20rem;
+  max-width: 40rem;
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(31, 41, 55, 0.5);
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  color: white;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+
+.input-field::placeholder {
+  color: #9ca3af;
+}
+
+.input-field:focus {
+  border-color: #F5A425;
+  outline: none;
+  box-shadow: 0 0 0 2px #F5A425;
+}
+
+/* Password strength meter styles */
+.password-strength-container {
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+}
+
+.password-strength-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.password-strength-header-text {
+  font-size: 0.75rem;
+  color: #9ca3af; 
+}
+
+.password-strength-meter {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.password-strength-meter-bar {
+  height: 0.25rem;
+  width: 25%;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+/* Meter colors */
+.meter-inactive {
+  background-color: #4b5563;
+}
+
+.meter-very-weak {
+  background-color: #ef4444;
+}
+
+.meter-weak {
+  background-color: #f87171;
+}
+
+.meter-fair {
+  background-color: #eab308;
+}
+
+.meter-good {
+  background-color: #93daad;
+}
+
+.meter-strong {
+  background-color: #22c55e;
+}
+
+/* Password criteria styles */
+.password-criteria {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.password-criteria-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.criteria-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.criteria-icon-met {
+  color: #F5A425;
+}
+
+.criteria-icon-not-met {
+  color: #6b7280;
+}
+
+.password-criteria-item-met {
+  color: #F5A425;
+}
+
+.password-criteria-item-not-met {
+  color: #9ca3af; 
+}
+
+.toggle-icon {
+  right: 0.75rem;
+  left: auto;
+  cursor: pointer;
+  pointer-events: all;
+}

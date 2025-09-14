@@ -1,0 +1,29 @@
+.background{
+  min-height: 100vh;
+  width: 100vw; 
+  background-image: url("https://stpiconsultancy.com/img/business-consultancy-services.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+}
+
+html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
